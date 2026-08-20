@@ -1,0 +1,22 @@
+{
+  "name": "SecurePass | Modern Password Generator & Security Studio",
+  "short_name": "SecurePass",
+  "description": "Generate Strong Passwords. Stay Secure. Trustworthy client-side cryptographic password and passphrase generator.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050a18",
+  "theme_color": "#2563EB",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ]
+}

@@ -12,7 +12,7 @@
 
 ## ✨ Features & Capabilities
 
-- **Zero-Trust Client-Side Architecture**: All credential generation and entropy calculations happen 100% locally in your browser memory.
+- **Zero-Trust Client-Side Architecture**: All credential generation and entropy calculations happen 100% locally in your browser memory  updates config.
 - **Multi-Mode Generation**:
   - **Password Mode (4–128 characters)**: Complete control over character sets (Uppercase, Lowercase, Numbers, Symbols), Exclude Similar (`i, l, 1, L, o, 0, O`), Exclude Ambiguous (`{}[]()/\'"\`~,;:.<>`), Custom Symbol Dictionary override, and **Pronounceable Syllables**.
   - **Passphrase Mode (EFF Diceware)**: High-entropy wordlist with custom delimiters (`-`, `_`, `.`, `Space`), Capitalization, and numeric salt injection.

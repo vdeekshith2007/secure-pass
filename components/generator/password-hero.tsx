@@ -47,7 +47,7 @@ export function PasswordHero({
         colors: ['#06B6D4', '#6366F1', '#10B981', '#A855F7'],
       });
     } catch (e) {
-      // ignore confetti errors in restricted envs
+      // ignore confetti errors in restricted envs requirements
     }
 
     setTimeout(() => setCopied(false), 2200);

@@ -34,7 +34,7 @@ export function getSecureRandomInt(max: number): number {
 }
 
 /**
- * Shuffle array using CSPRNG Fisher-Yates
+ * Shuffle array using CSPRNG Fisher-Yates update
  */
 function secureShuffleArray<T>(arr: T[]): T[] {
   const result = [...arr];

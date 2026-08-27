@@ -17,7 +17,7 @@ export function useKeyboardShortcuts({
 }: KeyboardShortcutHandlers) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Avoid intercepting inside inputs or textareas
+      // Avoid intercepting inside inputs or textareas is increased
       const target = e.target as HTMLElement;
       const isInput =
         target.tagName === 'INPUT' ||

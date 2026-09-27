@@ -5,7 +5,7 @@ export interface PasswordOptions {
   uppercase: boolean;
   lowercase: boolean;
   numbers: boolean;
-  symbols: boolean;
+  symbols: boolean;  
   excludeSimilar: boolean;
   excludeAmbiguous: boolean;
   customSymbols: string;

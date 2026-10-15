@@ -46,7 +46,7 @@ export function PasswordHero({
         origin: { y: 0.75 },
         colors: ['#06B6D4', '#6366F1', '#10B981', '#A855F7'],
       });
-    } catch (e) {
+    } catch {
       // ignore confetti errors in restricted envs requirements
     }
 

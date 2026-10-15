@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SecurityAnalysis } from '@/types/generator';
-import { ShieldAlert, ShieldCheck, Cpu, Clock, Activity, Lightbulb } from 'lucide-react';
+import { ShieldAlert, ShieldCheck, Clock, Lightbulb } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface SecurityDashboardProps {
@@ -20,20 +20,15 @@ export function SecurityDashboard({ analysis }: SecurityDashboardProps) {
     securityTips,
   } = analysis;
 
-  let colorClass = 'from-rose-500 to-red-600 text-rose-400';
   let barColor = 'bg-rose-500';
 
   if (strengthLevel === 'WEAK') {
-    colorClass = 'from-amber-500 to-orange-500 text-amber-400';
     barColor = 'bg-amber-500';
   } else if (strengthLevel === 'FAIR') {
-    colorClass = 'from-yellow-400 to-amber-500 text-yellow-300';
     barColor = 'bg-yellow-400';
   } else if (strengthLevel === 'STRONG') {
-    colorClass = 'from-cyan-400 to-blue-500 text-cyan-300';
     barColor = 'bg-cyan-400';
   } else if (strengthLevel === 'VERY STRONG' || strengthLevel === 'UNBREAKABLE') {
-    colorClass = 'from-emerald-400 via-cyan-400 to-purple-500 text-emerald-300';
     barColor = 'bg-emerald-400';
   }
 

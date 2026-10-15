@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { Shield, Moon, Sun, Keyboard, History, Lock } from 'lucide-react';
+import { Shield, Moon, Sun, Keyboard, History } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 interface HeaderProps {

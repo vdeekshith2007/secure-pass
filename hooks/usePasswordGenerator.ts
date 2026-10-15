@@ -43,7 +43,10 @@ export function usePasswordGenerator() {
 
   // Initial generation on mount or when mode/options change
   useEffect(() => {
-    generateNew();
+    const timer = setTimeout(() => {
+      generateNew();
+    }, 0);
+    return () => clearTimeout(timer);
   }, [mode, options, generateNew]);
 
   const updateOption = useCallback(

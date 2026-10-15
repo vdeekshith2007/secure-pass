@@ -21,21 +21,17 @@ export function usePasswordHistory() {
         }
       }
       if (stored) {
-        setHistory(JSON.parse(stored));
+        const parsed = JSON.parse(stored);
+        setTimeout(() => {
+          setHistory(parsed);
+        }, 0);
       }
     } catch (e) {
       console.error('Failed to load password history:', e);
     } finally {
-      setLoaded(true);
-    }
-  }, []);
-
-  const saveToStorage = useCallback((items: HistoryItem[]) => {
-    setHistory(items);
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
-    } catch (e) {
-      console.error('Failed to save password history:', e);
+      setTimeout(() => {
+        setLoaded(true);
+      }, 0);
     }
   }, []);
 

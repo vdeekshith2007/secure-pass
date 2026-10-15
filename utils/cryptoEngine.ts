@@ -49,12 +49,11 @@ function secureShuffleArray<T>(arr: T[]): T[] {
  * Generates a pronounceable password (alternating consonant-vowel syllables)
  */
 function generatePronounceable(options: PasswordOptions): string {
-  let chars = '';
-  let includeNumbers = options.numbers;
-  let includeSymbols = options.symbols;
+  const includeNumbers = options.numbers;
+  const includeSymbols = options.symbols;
   const length = options.length;
 
-  let out: string[] = [];
+  const out: string[] = [];
   for (let i = 0; i < length; i++) {
     if (i % 2 === 0) {
       const char = CONSONANTS[getSecureRandomInt(CONSONANTS.length)];

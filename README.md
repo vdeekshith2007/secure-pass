@@ -40,9 +40,13 @@
 
 ## 🚀 Getting Started
 
-First, install dependencies and start the local development server:
+First, install dependencies and start the local development server:     
 
 ```bash
+npm install
+npm run dev
+```
+  ```bash
 npm install
 npm run dev
 ```

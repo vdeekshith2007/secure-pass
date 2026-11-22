@@ -4,7 +4,7 @@
 
 ![SecurePass Shield & Key Studio](https://img.shields.io/badge/SecurePass-v3.0.0-2563EB?style=for-the-badge&logo=shield&logoColor=white)
 ![WebCrypto CSPRNG Engine](https://img.shields.io/badge/Engine-WebCrypto_CSPRNG-06B6D4?style=for-the-badge)
-![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero_Client_Side-10B981?style=for-the-badge)
+![Zero Telemetry](https://img.shields.io/badge/Telemetry-Zero_Client_Side-10B981?style=for-the-badge)     
 
 **SecurePass** is a modern, premium cybersecurity SaaS web application engineered to generate cryptographically secure passwords, high-entropy EFF Diceware passphrases, quantum-resistant tokens, and PIN codes entirely client-side using browser-native WebCrypto (`crypto.getRandomValues()`).
 
